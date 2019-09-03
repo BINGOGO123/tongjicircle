@@ -1,0 +1,23 @@
+.container-region
+{
+    margin-top:80px;
+}
+
+.guashi-existed
+{
+    box-shadow:0 0 3px rgb(199, 199, 199);
+    position: relative;
+    z-index:3;
+    padding:0;
+    padding-top:1px;
+    padding-bottom:1px;
+}
+.gonggao-item
+{
+    font-family: Microsoft YaHei;
+}
+
+.page-item
+{
+    text-align:center;
+}

@@ -1,0 +1,87 @@
+/*一条公告*/
+.gonggao-item
+{
+    margin-top:20px;
+    margin-bottom:20px;
+    padding:20px;
+    background-color:rgb(250, 250, 250);
+    cursor:pointer;
+    box-shadow:0 0 3px rgb(199, 199, 199);
+    border-radius:3px;
+    position: relative;
+    padding-top:20px;
+}
+
+.gonggao-item:hover
+{
+    box-shadow:0 0 8px rgb(199, 199, 199);
+}
+
+.gonggao-item.shoucang
+{
+    box-shadow:0 0 3px rgb(220, 236, 255);
+    background-color:rgb(241, 245, 252);
+}
+
+.gonggao-item.shoucang:hover
+{
+    box-shadow:0 0 8px rgb(199, 225, 255);
+}
+
+.gonggao-title
+{
+    float:left;
+    font-weight: bold;
+    font-size: 1.2rem;
+    font-family: heiti;
+}
+
+.gonggao-time
+{
+    float:right;
+    color:rgb(151, 151, 151);
+    margin-right:30px;
+}
+
+.gonggao-introduction
+{
+    margin-top:10px;
+}
+
+.gonggao-about-button
+{
+    border:none !important;
+    outline:none !important;
+    position: absolute;
+    top:0;
+    right:0;
+    background-color:transparent;
+    font-size:1.2rem;
+    color:rgb(70, 70, 70);
+    cursor: pointer;
+    padding:4px !important;
+    padding-right:6px !important;
+    padding-top:1px !important;
+}
+
+.gonggao-item.shoucang .gonggao-about-button
+{
+    color:rgb(100, 180, 255);
+}
+
+.gonggao-about-button:hover
+{
+    background-color:rgb(221, 221, 221);
+    border-radius:0 3px 0 17px;
+    box-shadow:0 0 3px rgb(199, 199, 199);
+}
+.gonggao-item.shoucang .gonggao-about-button:hover
+{
+    background-color:rgb(199, 225, 255);
+    box-shadow:0 0 3px rgb(199, 225, 255);
+}
+.gonggao-item .nid
+{
+    display:none;
+}
+/*一条公告结束*/

@@ -1,0 +1,112 @@
+.liuyan-region textarea
+{
+    display:block;
+    width:100%;
+    border:none;
+    /* border:1px solid rgb(200,200,200); */
+    /* box-shadow:0 0 1px rgb(200,200,200); */
+    background-color:rgb(232, 236, 238);
+    resize:none;
+    outline:none;
+    height:80px;
+    padding:6px;
+}
+
+.liuyan-region textarea:focus
+{
+    box-shadow:0 0 3px rgb(199, 199, 199);
+    background-color:white;
+}
+
+.liuyan-flex
+{
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top:8px;
+}
+
+.byte-display
+{
+    margin-right:10px;
+}
+
+.byte-display span
+{
+    color:green;
+}
+
+.clear
+{
+    clear:both;
+}
+
+.liuyan-head
+{
+    width:50px;
+    height:50px;
+    border-radius:100px;
+    flex:none;
+    margin-right:15px;
+}
+
+.liuyan-item
+{
+    display:flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    background-color:rgb(237, 245, 252);
+    padding:10px;
+    margin-bottom:15px;
+}
+
+.liuyan-item:nth-last-of-type(1)
+{
+    margin-bottom:0;
+}
+
+.liuyan-info
+{
+    flex:1;
+    border-left:solid 1px rgb(106, 136, 180);
+    padding-left:15px;
+}
+
+.liuyan-name a
+{
+    text-decoration: none;
+    font-size:1.1rem;
+}
+
+.liuyan-time
+{
+    float:right;
+    font-size:0.9rem;
+    color:rgb(88, 88, 88);
+}
+
+.liuyan-content
+{
+    font-size:0.9rem;
+}
+
+.liuyan-myself
+{
+    background-color:rgb(252, 244, 237);
+}
+
+.liuyan-myself .liuyan-name a
+{
+    color:rgb(235, 170, 49);
+}
+
+.liuyan-myself .liuyan-name a:hover
+{
+    color:rgb(207, 135, 0);
+}
+
+.liuyan-myself .liuyan-info
+{
+    border-left:solid 1px rgb(180, 150, 106);
+}
+

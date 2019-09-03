@@ -1,0 +1,256 @@
+.container-region
+{
+    margin-top:80px;
+}
+
+.bar
+{
+    position:fixed;
+    top:50%;
+    left:0;
+    transform: translate(0,-50%);
+
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+}
+.bar ul
+{
+    list-style-type:none;
+    padding:0;
+    margin:0;
+    background-color:rgb(244, 250, 255);
+    box-shadow:0 0 3px rgb(171, 187, 211);
+    width:100px;
+    display:none;
+    height:204px;
+    width:0;
+    overflow:hidden;
+} 
+.bar ul li
+{
+    padding:0;
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:5px;
+    padding-bottom:5px;
+    cursor:pointer;
+    text-align:center;
+    font-weight:bold;
+    font-family:youyuan;
+    width:100px;
+}
+
+.bar ul li.clicked
+{
+    background-color:rgb(52, 151, 122);
+    color:white;
+}
+
+.bar ul li:hover
+{
+    background-color:rgb(109, 138, 218);
+    color:white;
+}
+
+.move-in
+{
+    padding-right:10px;
+    padding:10px;
+    padding-left:5px;
+    background-color:rgb(244, 250, 255);
+    /* background-color:rgb(189, 221, 247); */
+    box-shadow:2px 0 2px rgb(171, 187, 211);
+    transition:0.5s;
+}
+
+.move-in:hover
+{
+    /* background-color:rgb(109, 135, 204);
+    color:white; */
+    cursor:pointer;
+}
+
+.move-in.rotate
+{
+    transform:scale(-1,1);
+    box-shadow:-2px 0 2px rgb(171, 187, 211);
+}
+
+/* .user-item
+{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    background-color:rgb(227, 242, 255);
+    padding-top:15px;
+    padding-bottom:15px;
+    box-shadow:0 0 3px rgb(171, 187, 211);
+    margin-bottom:15px;
+}
+
+.user-item:hover
+{
+    box-shadow:0 0 5px rgb(92, 111, 138);
+}
+
+.user-item img
+{
+    width:50px;
+    height:50px;
+    border-radius: 100px;
+}
+
+.item-up
+{
+    font-weight:bold;
+    position:fixed;
+    top:56px;
+    width:100%;
+    background-color:rgb(233, 233, 233);
+    box-shadow:0 0 5px rgb(200,200,200);
+}
+
+.item-up:hover
+{
+    box-shadow:0 0 5px rgb(200,200,200);  
+}
+
+.user-region
+{
+    padding-top:45px;
+} */
+
+.table-region
+{
+    display:block;
+    width:100%;
+    padding-top:50px;
+    display:none;
+}
+
+.table-region.present
+{
+    display:block;
+}
+
+.table-region thead tr
+{
+    align-items: center;
+    padding-top:15px;
+    padding-bottom:15px;
+    font-weight:bold;
+    position:fixed;
+    top:56px;
+    width:100%;
+    background-color:rgb(233, 233, 233);
+    box-shadow:0 0 5px rgb(200,200,200);
+    display:block;
+}
+
+.table-region tbody
+{
+    display:block;
+    width:100%;
+}
+
+.table-region tbody tr
+{
+    align-items: center;
+    background-color:rgb(227, 242, 255);
+    padding-top:15px;
+    padding-bottom:15px;
+    box-shadow:0 0 3px rgb(171, 187, 211);
+    display:block;
+    margin-bottom:15px;
+    width:100%;
+}
+
+.table-region tbody tr:hover
+{
+    box-shadow:0 0 5px rgb(92, 111, 138);
+}
+
+.table-region img
+{
+    width:50px;
+    height:50px;
+    border-radius: 100px;
+}
+
+.table-region a
+{
+    text-decoration: none;
+}
+
+.table-region td
+{
+    word-break:break-all;
+}
+
+.user-region td,.user-region th
+{
+    display:inline-block;
+    width:12%;
+    text-align:center;
+}
+
+.table-region .hidden-info
+{
+    display:none;
+}
+
+.article-region td,.article-region th
+{
+    display:inline-block;
+    width:24%;
+    text-align:center;
+}
+.activity-region td,.activity-region th
+{
+    display:inline-block;
+    width:24%;
+    text-align:center;
+}
+.announcement-region td,.announcement-region th
+{
+    display:inline-block;
+    width:32%;
+    text-align:center;
+}
+.article-comment-region td,.article-comment-region th
+{
+    display:inline-block;
+    width:19%;
+    text-align:center;
+}
+.activity-comment-region td,.activity-comment-region th
+{
+    display:inline-block;
+    width:19%;
+    text-align:center;
+}
+
+@media only screen and (max-width:850px)
+{
+    .user-region td,.user-region th
+    {
+        width:11%;
+    }
+    
+}
+
+@media only screen and (max-width:576px)
+{
+    .user-region td,.user-region th
+    {
+        display:none;
+    }
+    .user-region td:nth-of-type(1),.user-region td:nth-of-type(2),.user-region td:nth-of-type(8),.user-region th:nth-of-type(1),.user-region th:nth-of-type(2),.user-region th:nth-of-type(8)
+    {
+        display:inline-block;
+        width:32%;
+        text-align:center;
+    }
+}

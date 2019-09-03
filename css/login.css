@@ -1,0 +1,242 @@
+*
+{
+    box-sizing:border-box;
+}
+
+body
+{
+    background:rgb(252,252,252);
+}
+
+#display-region
+{
+    width:400px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:30px;
+    margin-bottom:30px;
+    padding:0;
+    box-shadow:0 0 3px rgb(199, 199, 199);
+    /* border-radius:10px; */
+    border:none;
+    background-color:white;
+    padding-bottom:10px;
+    /* transform:rotate(7deg); */
+    position: relative;
+}
+
+#display-region .select
+{
+    margin:0;
+    padding:0;
+    background-color:white;
+    border-radius:10px 10px 0 0;
+}
+
+#display-region .select button
+{
+    outline:none;
+    border:none;
+    background-color:transparent;
+    display:block;
+    font-size:1.2rem;
+    color:rgb(78, 163, 255);
+    background-color:rgb(238, 247, 253);
+    text-align:center;
+    /* border-radius:5px; */
+    width:50%;
+    padding:8px;
+    padding-top:18px;
+    padding-bottom:18px;
+    margin:0;
+    /* margin-top:20px; */
+    margin-bottom:20px;
+    /* border-radius:4px; */
+    cursor:pointer;
+}
+
+#display-region .select button:nth-of-type(1)
+{
+    float:left;
+    /* margin-left:5%; */
+}
+
+#display-region .select button:nth-of-type(2)
+{
+    float:right;
+    /* margin-right:5%; */
+}
+
+#display-region .select button:hover
+{
+    color:rgb(24, 134, 252);
+    background-color:rgb(221, 239, 252);
+}
+
+#display-region .select button.choose
+{
+    color:white;
+    background-color:rgb(78, 163, 255);
+    box-shadow:0 0 4px 2px rgb(211, 232, 255);
+}
+
+#display-region .content div:nth-of-type(2)
+{
+    display:none;
+}
+
+.clear
+{
+    clear:both;
+}
+
+#display-region .content
+{
+    background-color: white;
+    margin:0;
+}
+
+#display-region .content div form label
+{
+    display:block;
+    margin-top:15px;
+    margin-left:7%;
+    margin-right:5%;
+}
+
+#display-region .content div form label span
+{
+    font-size:1rem;
+    background-color: rgb(236, 247, 255);
+    border-radius:100px;
+    margin-right:14px;
+    font-weight:bold;
+    padding:6px;
+    /* position: relative;
+    top:2px; */
+}
+
+#display-region .content div form label input
+{
+    /* border:none; */
+    /* border:1px solid rgb(219, 219, 219); */
+    border:none;
+    box-shadow:0 0 3px rgb(199, 199, 199);
+    /* box-shadow:0 0 4px rgb(134, 161, 179); */
+    height:40px;
+    /* border-radius:5px; */
+    width:83%;
+    font-size:1rem;
+    /* display:inline-block; */
+    padding-left:8px;
+    padding-right:8px;
+}
+
+#display-region .content div form label input:focus
+{
+    /* border:1px solid rgb(178, 205, 255); */
+    outline:none;
+    box-shadow:0 0 4px 2px rgb(211, 232, 255);
+}
+
+#display-region .content div form label input.error-input
+{
+    box-shadow:0 0 3px rgb(218, 88, 88);
+}
+
+#display-region .content div form label input.error-input:focus
+{
+    box-shadow:0 0 4px rgb(255, 75, 75);
+}
+
+#display-region form > button
+{
+    outline:none;
+    border:none;
+    display:block;
+    font-size:1.2rem;
+    color:white;
+    text-align:center;
+    /* border-radius:5px; */
+    padding:8px;
+    margin:15px;
+    /* border-radius:5px; */
+    background-color:rgb(78, 163, 255);
+    box-shadow:0 0 4px 2px rgb(211, 232, 255);
+    width:90%;
+    margin-left:5%;
+    margin-right:5%;
+    cursor: pointer;
+}
+
+#display-region form > button:hover
+{
+    background-color:rgb(53, 149, 252);
+    box-shadow:0 0 4px 2px rgb(195, 223, 253);
+}
+
+#display-region .content div:nth-of-type(2) form label span
+{
+    font-size:1.2rem;
+    /* border-radius:100px; */
+}
+
+#display-region .content div:nth-of-type(2) form label input
+{
+    width:100%;
+}
+
+#display-region .content div:nth-of-type(2) form label
+{
+    margin-top:20px;
+}
+
+#display-region .content div form label:nth-of-type(1)
+{
+    margin-top:5px;
+}
+
+#error,#email-error
+{
+    font-size:1rem;
+    color:red;
+    position: relative;
+    top:-3px;
+    font-family:youyuan;
+}
+
+.back-trans-1,.back-trans-2
+{
+    width:100%;
+    height:252px;
+    position:absolute;
+    box-shadow:0 0 3px rgb(199, 199, 199);
+    top:0;
+    left:0;
+    z-index:-1;
+    color:white;
+}
+.back-trans-1
+{
+    transform:rotate(6deg) translateZ(0);
+}
+.back-trans-2
+{
+    transform:rotate(-6deg) translateZ(0);
+}
+
+@media only screen and (max-width:576px)
+{
+    #display-region
+    {
+        width:300px;
+    }
+    .back-trans-2,.back-trans-1
+    {
+        display:none;
+    }
+    #display-region .content div form label input
+    {
+        width:100%;
+    }
+}

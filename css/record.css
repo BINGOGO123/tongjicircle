@@ -1,0 +1,272 @@
+.container-region
+{
+    margin-top:60px;
+}
+.clear
+{
+    clear:both;
+}
+
+.record-line
+{
+    display: flex;
+    align-items:center;
+    /* box-shadow:0 0 3px rgb(200,200,200); */
+    margin-left:-15px;
+    margin-right:-15px;
+    background-color:white;
+    margin-bottom:20px;
+    cursor:pointer;
+}
+
+.record-line .record-left
+{
+    flex:none;
+}
+
+.record-line .record-right
+{  
+    flex:1;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-right:15px;
+}
+
+.record-line .record-left i
+{
+    display:block;
+    /* width:300px; */
+    padding-left:40px;
+    padding-right:40px;
+}
+
+.record-href
+{
+    /* margin-left:5px;
+    margin-right:5px; */
+    margin-top:5px;
+    margin-bottom:5px;
+    border-radius:3px;
+}
+
+.record-href a
+{
+    text-decoration: none;
+    /* color:rgb(0, 140, 255); */
+    display:block;
+    padding-left:8px;
+    padding-right:8px;
+    border-radius:3px;
+    padding-top:4px;
+    padding-bottom:4px;
+}
+
+.record-time
+{
+    color:gray;
+    font-size:0.9rem;
+}
+
+.record-title
+{
+    /* font-family: "Microsoft YaHei"; */
+    font-size:1.1rem;
+}
+
+.record-content
+{
+    /* font-family: "Microsoft YaHei"; */
+    color:rgb(73, 73, 73);
+}
+
+.record-write
+{
+    background-color:rgb(239, 244, 255);
+    box-shadow:0 0 1px rgb(178, 195, 228);
+}
+.record-write .record-left i
+{
+    color:rgb(147, 158, 255);
+}
+.record-write .record-href
+{
+    background-color:rgb(212, 225, 253);
+}
+.record-write:hover
+{
+    box-shadow:0 0 6px rgb(178, 195, 228);
+}
+
+.record-comment
+{
+    background-color:rgb(255, 250, 245);
+    box-shadow:0 0 1px rgb(228, 201, 178);
+}
+.record-comment .record-left i
+{
+    color:rgb(255, 212, 147);
+}
+.record-comment .record-href
+{
+    background-color:rgb(253, 245, 222);
+}
+.record-comment .record-href a
+{
+    color:rgb(209, 155, 74);
+}
+.record-comment .record-href a:hover
+{
+    color:rgb(175, 119, 34);
+}
+.record-comment:hover
+{
+    box-shadow:0 0 6px rgb(228, 201, 178);
+}
+
+.record-love
+{
+    background-color:rgb(255, 239, 239);
+    box-shadow:0 0 1px rgb(228, 178, 178);
+}
+.record-love .record-left i
+{
+    color:rgb(255, 147, 147);
+}
+.record-love .record-href
+{
+    background-color:rgb(255, 221, 221);
+}
+.record-love .record-href a
+{
+    color:rgb(209, 74, 74);
+}
+.record-love .record-href a:hover
+{
+    color:rgb(175, 34, 34);
+}
+.record-love:hover
+{
+    box-shadow:0 0 6px rgb(228, 178, 178);
+}
+
+.person-region
+{
+    background-color:rgb(243, 243, 243);
+    margin-left:-15px;
+    margin-right:-15px;
+    padding:20px;
+    margin-bottom:20px;
+    box-shadow:0 0 3px rgb(200,200,200);
+}
+.person-info
+{
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    flex-wrap:wrap;
+}
+.person-fixed
+{
+    display:flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items:center;
+}
+.data
+{
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-start;
+}
+.flex-item
+{
+    display:flex;
+    flex-direction: row;
+    justify-content:flex-start;
+}
+.person-name
+{
+    margin-bottom:10px;
+    font-size:1.1rem;
+}
+.person-text
+{
+    padding-right:15px;
+    border-right:solid 1px rgb(190, 190, 190);
+}
+.person-info img
+{
+    width:80px;
+    height:80px;
+    border-radius:10px;
+    margin-right:10px;
+    cursor:pointer;
+}
+.data-item
+{
+    padding-left:15px;
+    padding-right:15px;
+    border-right:solid 1px rgb(190, 190, 190);
+}
+.person-info .flex-item:nth-last-of-type(1) .data-item:nth-last-of-type(1)
+{
+    border:none;
+}
+.data-title
+{
+    font-size:1rem;
+}
+.data-num
+{
+    font-size:1.1rem;
+    font-weight:bold;
+}
+
+
+@media only screen and (max-width:700px)
+{
+    .flex-item
+    {
+        display:block;
+    }
+    .person-info .data-item,.person-info .flex-item:nth-last-of-type(1) .data-item:nth-last-of-type(1)
+    {
+        border-right:solid 1px rgb(190, 190, 190);
+    }
+}
+
+@media only screen and (max-width:576px)
+{
+    .data
+    {
+        display:block;
+    }
+}
+
+@media only screen and (max-width:500px)
+{
+    .person-info
+    {
+        flex-direction: column;
+    }
+
+    .data
+    {
+        display:flex;
+        margin-top:15px;
+    }
+    .person-text
+    {
+        border:none;
+        justify-content: center;
+    }
+    .person-info .flex-item:nth-last-of-type(1) .data-item
+    {
+        border:none;
+    }
+    .person-info .flex-item:nth-last-of-type(1) .data-item:nth-last-of-type(1)
+    {
+        border:none;
+    }
+}

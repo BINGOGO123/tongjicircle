@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.fl {
+  float: left;
+}
+.page-box {
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  width:auto;
+  display:inline-block;
+  -webkit-user-select:none;
+}
+.page-box button {
+  padding: 0 10px;
+  margin: 0 10px;
+  height: 40px;
+  float: left;
+  cursor: pointer;
+  border: 1px solid #ebebeb;
+  background-color: #ffffff;
+  border:none;
+  outline:none;
+  box-shadow:0 0 3px rgb(200,200,200);
+}
+.page-box button:hover
+{
+  background-color:rgb(125, 192, 255)
+}
+.page-box .first-page,
+.page-box .last-page {
+  margin: 0;
+}
+.page-box .pageWrap {
+  height: 40px;
+  float: left;
+  overflow: hidden;
+}
+.page-box .pageWrap ul {
+  width: 100000px;
+  height: 40px;
+  float: left;
+}
+.page-box .pageWrap ul li {
+  width: 60px;
+  height: 40px;
+  border: 1px solid #ebebeb;
+  line-height: 40px;
+  page-box-sizing: border-page-box;
+  cursor: pointer;
+  float: left;
+}
+.page-box .pageWrap ul .sel-page {
+  background-color: rgb(125, 192, 255);
+}
+.page-box .jump-text {
+  width: 60px;
+  height: 40px;
+  text-align: center;
+  margin: 0 5px;
+  float: left;
+  border:none;
+  outline:none;
+  box-shadow:0 0 3px rgb(200,200,200);
+}
+.page-box .jump-text:focus
+{
+  box-shadow:0 0 2px 2px rgb(211, 226, 255);
+}
+.page-box .jump-button {
+  margin: 0;
+  float: left;
+}
+.page-box .total-pages,
+.page-box .total-count {
+  margin-left: 10px;
+  float: left;
+  font-size: 14px;
+}

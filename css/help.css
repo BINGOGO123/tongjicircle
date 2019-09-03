@@ -1,0 +1,27 @@
+.line
+{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items:center;
+    margin-bottom:10px;
+}
+
+.line div:nth-of-type(1)
+{
+    background-color:rgb(243, 243, 243);
+    font-weight:bold;
+    border-radius:4px;
+    padding-left:4px;
+    padding-right:4px;
+}
+
+.line div:nth-of-type(2)
+{
+    margin-left:6px;
+}
+
+.container-region
+{
+    margin-top:80px;
+}

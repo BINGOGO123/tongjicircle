@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf8" />
+        <title>登录</title>
+        <link type="image/x-icon" rel="icon" href="images/logo.png" />
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+        <link type="text/css" rel="stylesheet" href="css/login.css" />
+        <script src="jquery/jquery.min.js"></script>
+        <script src="js/login.js"></script>
+    </head>
+    <body>
+        <div id="display-region">
+            <div class="select">
+                <button class="choose">登录</button>
+                <button>注册</button>
+                <div class="clear"></div>
+            </div>
+            <div class="content">
+                <!--登录输入框,ajax的方式进行交互-->
+                <div>
+                    <form>
+                        <label><span>管理员账号</span>416778940@qq.com</label>
+                        <label><span>管理员密码</span>a123</label>
+                        <hr style="width:85%; margin-top:20px;border:none;height:1px;background-color:rgb(175, 202, 238);box-shadow:0 0 2px rgb(25, 114, 150);"/>
+                        <label><span>邮箱</span><input name="login-email" placeholder="请输入您的邮箱" type="email" maxlength="50"/></label>
+                        <label><span>密码</span><input name="login-password" placeholder="请输入您的密码" type="password" maxlength="30" /></label>
+                        <button id="submit-login">登录</button>
+                    </form>
+                </div>
+                <!--注册输入框,ajax方式进行交互-->
+                <div>
+                    <form>
+                        <label><span>邮箱</span><b id="email-error"></b><input name="reg-email" type="email" placeholder="请输入您的邮箱" maxlength="50"/></label>
+                        <label><span>昵称</span><input name="reg-userName" type="text" placeholder="请输入您的昵称" maxlength="15"/></label>
+                        <label><span>密码</span><input name="reg-password" type="password" placeholder="请输入您的密码" autocomplete="new-password" maxlength="30"/></label>
+                        <label><span>确认密码</span><b id="error"></b><input id="password-ensure" type="password" placeholder="再次输入密码" autocomplete="new-password" maxlength="30"/></label>
+                        <button id="submit-reg">注册</button>
+                    </form>
+                </div>
+            </div>
+            <div class="back-trans-1"></div>
+            <div class="back-trans-2"></div>
+        </div>
+    </body>
+</html>

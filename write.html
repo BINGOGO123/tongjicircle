@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf8" />
+        <title>发布文章</title>
+        <link type="image/x-icon" rel="icon" href="images/logo.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link type="text/css" rel="stylesheet" href="bootstrap/bootstrap.min.css" />
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="css/write.css" />
+        <script src="jquery/jquery.min.js"></script>
+        <script src="bootstrap/popper.min.js"></script>
+        <script src="bootstrap/bootstrap.min.js"></script>
+        <script src="js/nav.js"></script>
+        <script src="plugin/wangEditor.js"></script>
+        <script src="js/write.js"></script>
+        <link rel="stylesheet" href="css/nav.css" />
+    </head>
+    <body>
+        <nav id="nav-bar"></nav>
+        <div class="container-region">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-2"></div>
+                    <div class="col-xl-6 col-lg-8">
+                        <div class="region">
+                            <div class="img-box">
+                                <img class="img" src="images/article-image.jpg" />
+                                <div class="img-alert">
+                                    <label>点击选择封面图片</label>
+                                    <i class="fa fa-fw fa-camera"></i>
+                                </div>
+                            </div>
+                            <input id="image-choose" type="file" />
+                            <div class="box">
+                            <input type="text" class="title" placeholder="请输入标题（最多20字）" maxlength="20"/>
+                            <input type="text" class="introduction" placeholder="请输入简介（最多50字）" maxlength="50"/>
+                            <div class="select-box">
+                                <div class="select-item">学习</div>
+                                <div class="select-item">社交</div>
+                                <div class="select-item">生活</div>
+                                <div class="select-item clicked">其他</div>
+                            </div>
+                            <div id="editor">
+                                <p>请输入文章内容</p>
+                            </div>
+                            <button class="btn btn-primary submit-article">发布</button>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-2"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

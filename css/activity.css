@@ -1,0 +1,188 @@
+.container-region
+{
+    margin-top:80px;
+}
+
+.content
+{
+    box-shadow:0 0 3px rgb(199, 199, 199);
+    font-size:1rem;
+    padding:20px;
+    margin-bottom:20px;
+}
+
+.content .content-title
+{
+    font-size:1.2rem;
+    text-align:center;
+}
+
+.content .content-time
+{
+    font-size:1rem;
+    text-align:right;
+    background-color:rgb(228, 228, 228);
+    float:right;
+    /* border-radius:4px; */
+    padding-left:4px;
+    padding-right:4px;
+}
+
+.content .first-hr
+{
+    margin-top:0;
+}
+
+.agree-row
+{
+    text-align:center;
+    margin:0;
+    padding:0;
+    -webkit-user-select:none;
+}
+
+.agree
+{
+    list-style:none;
+    display:inline;
+    padding:0;
+    margin:0;
+}
+
+.agree li
+{
+    padding:0;
+    margin:0;
+    display:inline;
+}
+
+.agree li:nth-of-type(1) i
+{
+    color:rgb(253, 166, 210);
+    cursor:pointer;
+}
+.agree li:nth-of-type(2) i
+{
+    color:rgb(160, 255, 192);
+    cursor:pointer;
+}
+.agree li:nth-of-type(3) i
+{
+    color:rgb(180, 206, 255);
+    cursor:pointer;
+}
+
+.clear
+{
+    clear:both;
+}
+
+.sep
+{
+    margin-left:6px;
+    margin-right:6px;
+    background-color:rgb(88, 88, 88);
+    width:1px;
+    height:12px;
+    display:inline-block;
+}
+
+.agree li:nth-of-type(3) i
+{
+    color:rgb(180, 206, 255);
+    cursor:pointer;
+}
+
+.talk-box
+{
+    box-shadow:0 0 3px rgb(199, 199, 199);
+    font-size:1rem;
+    padding:20px;
+    margin-bottom:20px;
+}
+
+.talk-box .talk-box-line
+{
+    margin-bottom:6px;
+}
+
+.talk-box .talk-box-line .line-title
+{
+    background-color:rgb(235, 235, 235);
+    padding:1px;
+    padding-left:6px;
+    padding-right:6px;
+    border-radius:4px;
+}
+
+.talk-box .talk-box-line span.danger
+{
+    color:rgb(255, 74, 74);
+}
+
+.talk-box .talk-box-line span.safe
+{
+    color:rgb(12, 170, 12);
+}
+
+.talk-box .user-link
+{
+    text-decoration: none;
+}
+
+#yid
+{
+    display:none;
+}
+
+.attended,.attend,.outdate
+{
+    padding-left:6px;
+    padding-right:6px;
+    border-radius:4px;
+    text-align:center;
+    cursor:pointer;
+    width:100px;
+}
+.attended
+{
+    border:1px solid rgb(42, 185, 29);
+    color:rgb(42, 185, 29);
+}
+.attend,.outdate
+{
+    border:1px solid rgb(255, 78, 78);
+    color:rgb(255, 78, 78);
+}
+.attended.hidden,.attend.hidden
+{
+    display:none;
+}
+
+.attended:hover
+{
+    background-color:rgb(255, 78, 78);
+    color:white;
+    font-weight:bold;
+    border:1px solid rgb(255, 78, 78);
+}
+
+.attend:hover
+{
+    background-color:rgb(42, 185, 29);
+    color:white;
+    font-weight:bold;
+    border:1px solid rgb(42, 185, 29);
+}
+
+.para-line
+{
+    margin-bottom:2px;
+}
+
+.attend-line
+{
+    display:flex;
+    flex-direction: row;
+    justify-content:flex-start;
+}

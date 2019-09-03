@@ -1,0 +1,215 @@
+.user-info
+{
+    margin:0;
+    padding:0;
+}
+
+.user-info .first-line
+{
+    background-color:rgb(233,236,239);
+    color:rgb(80, 80, 80);
+    padding:10px;
+    padding-top:20px;
+    padding-bottom:20px;
+    margin:0;
+    border-radius:4px 4px 0 0;
+}
+
+.user-info .first-line img.nav-dropdown-head
+{
+    float:left;
+    width:90px;
+    height:90px;
+    border-radius:100px;
+    box-shadow:0 0 0 2px white;
+    margin-left:30px;
+}
+
+.user-info .first-line .img-right
+{
+    float:left;
+    margin:0;
+    padding:0;
+    margin-left:10px;
+}
+
+.user-info .first-line .img-right div:nth-of-type(1)
+{
+    margin-top:10px;
+    font-size:1rem;
+    font-weight:bold;
+}
+
+.user-info .first-line .img-right div:nth-of-type(2)
+{
+    margin-top:6px;
+    font-size:0.9rem;
+}
+.user-info .first-line .img-right div:nth-of-type(3)
+{
+    font-size:0.9rem;
+}
+
+.user-info .second-line 
+{
+    padding:0;
+    margin:0;
+}
+
+.user-info .second-line .line
+{
+    margin-top:15px;
+    padding-left:20px;
+    padding-right:20px;
+}
+
+.user-info .second-line .line span.line-button
+{
+    background-color:rgb(68,128,255);
+    color:white;
+    border-radius:100px;
+    padding:3px;
+    font-size: 0.8rem;
+    cursor:pointer;
+    float:right;
+}
+
+.user-info .second-line .line span.line-button:hover
+{
+    background-color:rgb(31, 101, 253);
+}
+
+.user-info .second-line .line span.line-button a
+{
+    color:white;
+    text-decoration: none;
+}
+
+body
+{
+    background-color:rgb(252, 252, 252);
+}
+
+#nav-head
+{
+    /* border-radius:4px; */
+    width:25px;
+    height:25px;
+    position: relative;
+    top:-1px;
+    border-radius:10px;
+}
+
+#nav-head:hover
+{
+    box-shadow:0 0 4px rgb(224, 224, 224);
+}
+
+.no-after::after
+{
+    display:none !important;
+}
+
+.li-last
+{
+    float:right !important;
+}
+
+.my-modal
+{
+    padding-top:0;
+    padding-bottom:8px;
+    border-radius:4px 4px 4px 4px;
+    width:300px;
+    margin-top:-5px;
+}
+
+.ul-1
+{
+    margin-left:20px;
+    font-size:1.1rem;
+}
+
+.my-style
+{
+    box-shadow: 0 0 6px 4px rgb(180, 180, 180);
+}
+
+.my-style.light
+{
+    background-color:rgb(249, 249, 250) !important;
+    /* background-color:rgb(51, 53, 70) !important; */
+}
+.my-style.light .navbar-brand
+{
+    color:rgb(53, 53, 53) !important;
+}
+
+.navbar-brand
+{
+    padding:0;
+    font-family: YouYuan;
+    font-weight:bold;
+    padding-right:10px;
+}
+.navbar-brand span
+{
+    line-height: 35px;
+    margin-left:6px;
+} 
+
+.navbar-brand img{
+    height: 35px;
+}
+
+.my-style.light .nav-link-text,.d-lg-none,nav i,.navbar-toggler-icon
+{
+    color:rgb(102, 101, 101);
+}
+.my-style.light .nav-link-text:hover
+{
+    color:rgb(32, 32, 32);
+}
+.vertical-line
+{
+    width:1px;
+    height:40px;
+    background-color:rgb(207, 207, 207);
+    box-shadow:0 0 2px rgb(224, 224, 224);
+}
+.my-style.light .vertical-line
+{
+    background-color:rgb(168, 167, 167);
+    box-shadow:0 0 2px gray;
+}
+
+.my-style.light nav a::after
+{
+    color:rgb(102, 101, 101);
+}
+
+.clear
+{
+    clear:both;
+}
+
+@media only screen and (max-width:992px)
+{
+    .vertical-line
+    {
+        display:none;
+    }
+}
+
+#nav-bar
+{
+    z-index:10002;
+}
+
+xmp
+{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    padding:0;
+    margin:0;
+    display:inline;
+}

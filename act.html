@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf8" />
+        <title>创建活动</title>
+        <link type="image/x-icon" rel="icon" href="images/logo.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link type="text/css" rel="stylesheet" href="bootstrap/bootstrap.min.css" />
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="css/act.css" />
+        <script src="jquery/jquery.min.js"></script>
+        <script src="bootstrap/popper.min.js"></script>
+        <script src="bootstrap/bootstrap.min.js"></script>
+        <script src="js/nav.js"></script>
+        <script src="plugin/wangEditor.js"></script>
+        <script src="js/act.js"></script>
+        <link rel="stylesheet" href="css/nav.css" />
+    </head>
+    <body>
+        <nav id="nav-bar"></nav>
+        <div class="container-region">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-2"></div>
+                    <div class="col-xl-6 col-lg-8">
+                        <div class="region">
+                            <div class="img-box">
+                                <img class="img" src="images/background1.jpg" />
+                                <div class="img-alert">
+                                    <label>点击选择封面图片</label>
+                                    <i class="fa fa-fw fa-camera"></i>
+                                </div>
+                            </div>
+                            <input id="image-choose" type="file" />
+                            <div class="box">
+                            <input type="text" class="title" placeholder="请输入活动主题（最多20字）" maxlength="20"/>
+                            <div class="select-box">
+                                <div class="select-item">学习</div>
+                                <div class="select-item">社交</div>
+                                <div class="select-item">生活</div>
+                                <div class="select-item clicked">其他</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <label class="line">
+                                        <div class="badge badge-light left">开始时间</div>&nbsp;
+                                        <input class="right" type="datetime-local" id="start-time" />
+                                    </label>
+                                </div>
+                                <div class="col-6">
+                                    <label class="line">
+                                        <div class="badge badge-light left">结束时间</div>&nbsp;
+                                        <input class="right" type="datetime-local" id="end-time"/>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-8">
+                                    <label class="line">
+                                        <div class="badge badge-light left">活动地点</div>&nbsp;
+                                        <input class="right" type="text" id="location" maxlength="30" />
+                                    </label>
+                                </div>
+                                <div class="col-4">
+                                    <label class="line">
+                                        <div class="badge badge-light left">人数上限</div>&nbsp;
+                                        <input class="right" type="number" id="max-number"/>
+                                    </label>
+                                </div>
+                            </div>
+                            <div id="editor">
+                                <p>请输入活动的详细内容</p>
+                            </div>
+                            <button class="btn btn-primary submit-article">创建</button>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-2"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
