@@ -1,0 +1,72 @@
+.container-region
+{
+    margin-top:80px;
+    margin-bottom:20px;
+}
+
+.title,.introduction
+{
+    display:block;
+    width:100%;
+    font-size:1.4rem;
+    outline:none;
+    box-shadow:0 0 3px rgb(200,200,200);
+    border:none;
+    margin-bottom:20px;
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:6px;
+    padding-bottom:6px;
+}
+
+.title:hover,.introduction:hover
+{
+    box-shadow:0 0 2px 2px rgb(211, 226, 255);
+}
+
+.box
+{
+    border:none;
+    box-shadow:0 0 3px rgb(200,200,200);
+    padding:10px;
+    margin-top:20px;
+    position: relative;
+    background-color:white;
+}
+
+.region
+{
+    min-width:750px;
+}
+
+.clear
+{
+    clear:both;
+}
+
+.submit-article
+{
+    float:right;
+    margin-top:15px;
+}
+
+.back-trans-1,.back-trans-2
+{
+    width:100%;
+    /* height:252px; */
+    position:absolute;
+    box-shadow:0 0 3px rgb(199, 199, 199);
+    top:0;
+    left:0;
+    bottom:0;
+    z-index:-1;
+    color:white;
+}
+.back-trans-1
+{
+    transform:rotate(6deg) translateZ(0);
+}
+.back-trans-2
+{
+    transform:rotate(-6deg) translateZ(0);
+}

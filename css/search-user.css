@@ -1,0 +1,134 @@
+.container-region
+{
+    margin-top:60px;
+    margin-bottom:20px;
+}
+
+#header
+{
+    /* background-image:url("../images/background9.jpg"); */
+    background-color:rgb(234, 241, 243);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top:20px;
+    padding-bottom:20px;
+    text-align:center;
+    width:100%;
+    box-shadow:0 0 6px rgba(66, 97, 114,0.6);
+}
+
+#header i
+{
+    position:relative;
+    left:35px;
+    top:-3px;
+}
+
+#header input
+{
+    width:60%;
+    /* border-radius:5px 0 0 5px; */
+    border:none;
+    outline:none;
+    padding-left:40px;
+    padding-right:20px;
+    font-size:1.2rem;
+    line-height:40px;
+    background-color:rgb(226, 226, 226);
+    /* color:white; */
+}
+
+#header input:focus
+{
+    background-color:white;
+    box-shadow:0 0 3px rgb(200,200,200);
+}
+
+#header button
+{
+    background-color:rgb(97, 173, 245);
+    color:whitesmoke;
+    padding-left:30px;
+    padding-right:30px;
+    border-radius:0 5px 5px 0;
+    margin-left:0;
+    outline:none;
+    border:0;
+    position:relative;
+    top:0;
+    left:-5px;
+    font-size:1.2rem;
+    line-height:40px;
+    box-shadow:0 0 3px rgb(200,200,200);
+}
+
+.nothing
+{
+    /* text-align:center; */
+    margin-top:20px;
+    font-size:1.2rem;
+    color:rgb(0, 119, 255);
+    font-family: youyuan;
+    font-weight: bold;
+}
+
+.recommend-box
+{
+    margin-top:15px;
+    /* box-shadow:0 0 5px rgb(177, 227, 255); */
+    background-color:rgba(165, 212, 250, 0.3);
+    padding-bottom:1px;
+    overflow:hidden;
+}
+
+.recommend-box:hover
+{
+    box-shadow:0 0 6px rgba(51, 140, 192,0.6);
+}
+
+.title-line
+{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    height:32px;
+    padding-left:10px;
+}
+
+.title-line i
+{
+    width:32px;
+    height:32px;
+    text-align:center;
+    line-height: 32px;
+    cursor:pointer;
+}
+
+.title-line i:hover
+{
+    /* color:white;
+    background-color:rgb(245, 67, 67); */
+    color:rgb(255, 78, 78);
+}
+
+.display-box
+{
+    margin:10px;
+    margin-top:0;
+}
+
+.recommend-title
+{
+    /* font-family: youyuan; */
+    /* font-weight:bold; */
+    background-color:rgb(233, 233, 233);
+    padding-left:6px;
+    padding-right:6px;
+    /* border-radius:3px; */
+    border:1px solid rgb(60, 178, 247);
+    background-color:white;
+    color:rgb(60, 178, 247);
+    border-radius:3px;
+    margin-top:4px;
+}

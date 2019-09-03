@@ -1,0 +1,88 @@
+.container-region
+{
+    margin-top:80px;
+    margin-bottom:20px;
+}
+
+.content
+{
+    box-shadow:0 0 3px rgb(199, 199, 199);
+    font-size:1rem;
+    padding:20px;
+}
+
+.content .content-title
+{
+    font-size:1.2rem;
+    text-align:center;
+}
+
+.content .content-time
+{
+    font-size:1rem;
+    text-align:right;
+    background-color:rgb(228, 228, 228);
+    float:right;
+    /* border-radius:4px; */
+    padding-left:4px;
+    padding-right:4px;
+}
+
+.content .first-hr
+{
+    margin-top:0;
+}
+
+.agree-row
+{
+    text-align:center;
+    margin:0;
+    padding:0;
+    -webkit-user-select:none;
+}
+
+.agree
+{
+    list-style:none;
+    display:inline;
+    padding:0;
+    margin:0;
+}
+
+.agree li
+{
+    padding:0;
+    margin:0;
+    display:inline;
+}
+
+.agree li:nth-of-type(1) i
+{
+    color:rgb(100, 180, 255);
+    cursor:pointer;
+}
+.agree li:nth-of-type(2) i
+{
+    color:rgb(160, 255, 192);
+    cursor:pointer;
+}
+
+.clear
+{
+    clear:both;
+}
+
+.sep
+{
+    margin-left:6px;
+    margin-right:6px;
+    background-color:rgb(88, 88, 88);
+    width:1px;
+    height:12px;
+    display:inline-block;
+}
+
+#nid
+{
+    display:none;
+}

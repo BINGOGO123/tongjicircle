@@ -1,0 +1,170 @@
+.container-region
+{
+    margin-top:80px;
+    margin-bottom:20px;
+}
+
+.img
+{
+    display:block;
+    width:100%;
+    transition:all 0.6s;
+}
+
+.title,.introduction
+{
+    display:block;
+    width:100%;
+    font-size:1.4rem;
+    outline:none;
+    box-shadow:0 0 3px rgb(200,200,200);
+    border:none;
+    margin-bottom:20px;
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:6px;
+    padding-bottom:6px;
+}
+
+.box
+{
+    border:none;
+    box-shadow:0 0 3px rgb(200,200,200);
+    padding:10px;
+    margin-top:20px;
+}
+
+.region
+{
+    min-width:750px;
+}
+
+.img-box
+{
+    position: relative;
+    cursor:pointer;
+    overflow:hidden;
+}
+
+.img-box .img-alert
+{
+    font-size:1.8rem;
+    font-weight:bold;
+    position: absolute;
+    bottom:10%;
+    display:block;
+    width:100%;
+    text-align:center;
+    color:white;
+    transition:all 0.6s;
+    /* font-family:simhei; */
+}
+
+.img-box .img-alert label,.img-box .img-alert i
+{
+    display:block;
+    text-align:center;
+    width:100%;
+}
+
+.img-box .img-alert label
+{
+    display:none;
+}
+
+.img-box:hover label
+{
+    /* color:black; */
+    /* transform: scale(1.1); */
+    /* font-family:youyuan; */
+}
+
+.img-box:hover img
+{
+    transform: scale(1.1);
+}
+
+.select-box
+{
+    display:flex;
+    justify-content:space-around;
+    margin-bottom:20px;
+}
+
+.select-box .select-item
+{
+    padding:10px 15px 10px 15px;
+    box-shadow:0 0 3px rgb(200,200,200);
+    font-size:1.2rem;
+    width:20%;
+    text-align:center;
+    cursor: pointer;
+    -webkit-user-select: none;
+}
+
+.select-box .select-item:hover
+{
+    background-color:rgb(240, 240, 240);
+}
+
+.select-box .select-item.clicked
+{
+    color:white;
+    background-color:rgb(115, 190, 252);
+}
+
+.clear
+{
+    clear:both;
+}
+
+.submit-article
+{
+    float:right;
+    margin-top:15px;
+}
+
+.container-region .line
+{
+    width:100%;
+    display: flex;
+    margin-bottom:20px;
+}
+
+.region .line .left
+{
+    font-size:1rem;
+    flex: none;
+    padding-top:6px;
+    padding-bottom:6px;
+    line-height:26px;
+}
+
+.region .line .right
+{
+    display:block;
+    flex:1;
+}
+
+.region .line input
+{
+    font-size:1rem;
+    outline:none;
+    box-shadow:0 0 3px rgb(200,200,200);
+    border:none;
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:6px;
+    padding-bottom:6px;
+    min-width:0;
+}
+
+.region .line input:focus
+{
+    box-shadow:0 0 2px 2px rgb(211, 226, 255);
+}
+
+#image-choose
+{
+    display:none;
+}

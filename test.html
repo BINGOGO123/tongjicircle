@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf8" />
+        <title>文章查看</title>
+        <link type="image/x-icon" rel="icon" href="images/logo.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link type="text/css" rel="stylesheet" href="bootstrap/bootstrap.min.css" />
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
+        <script src="jquery/jquery.min.js"></script>
+        <script src="bootstrap/popper.min.js"></script>
+        <script src="bootstrap/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="css/nav1.css" />
+    </head>
+    <body>
+        <!-- <div class="zhb-nav">
+            <a href="home.html" class="logo">
+                <img src="images/web.png" alt="哎呀，图片丢失了">
+            </a>
+            <ul class="nav-ul">
+                <li><a href="home.html">首页</a></li> 
+                <li><a href="my-article.html" id="my-share">我的帖子</a></li>
+                <li><a id="slode-down-myself" href="javascript:void(0)">页主推荐</a></li>
+                <li><a href="region-article.html " id="search-share">查找分享</a></li>
+                <li><a href="data-analyze.html" id="data-analyze">数据分析</a></li>
+                <li class="nav-item dropdown li-last">
+                    <a class="nav-link dropdown-toggle mr-lg-2 no-after" id="alertsDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img id="nav-head" src="images/head.jpg" alt="头像" />
+                        <span class="d-lg-none">您的信息</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right my-modal" aria-labelledby="alertsDropdown">
+                        <div class="user-info">
+                            <div class="first-line">
+                                <img class="nav-dropdown-head" src="images/head.jpg" alt="大头像" />
+                                <div class="img-right">
+                                <div>臧海彬</div>
+                                <div><span>1652241</span></div>
+                                <div>计算机科学与技术</div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="second-line">
+                                <div class="line">
+                                    <i class="fa fa-fw fa-map-marker"></i>
+                                    <span>嘉定校区7号楼301寝室</span>
+                                </div>
+                                <div class="line">
+                                    <i class="fa fa-fw fa-graduation-cap"></i>
+                                    <span>本科大学三年级</span>
+                                </div>
+                                <div class="line">
+                                    <i class="fa fa-fw fa-envelope"></i>
+                                    <span>416778940@qq.com</span>
+                                    <span class="line-button">编辑</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">
+                            <span class="text-success">
+                                <strong>使用帮助</strong>
+                            </span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">
+                            <span class="text-success">
+                                <strong>关于我们</strong>
+                            </span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">
+                            <span class="text-success">
+                                <strong>登出</strong>
+                            </span>
+                        </a>
+                    </div>
+                </li>
+                <li class="li-last">
+                    <form class="nav-form">
+                        <input class="form-control" type="text" placeholder="Search" style="margin:0 4px 0 0;">
+                        <button class="btn btn-success" type="button">Search</button>
+                    </form>
+                </li>
+                <div class="clear"></div>
+            </ul>
+        </div> -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top my-style">
+            <a class="navbar-brand" href="javascript:void(0)"><img src="images/web.png" alt="哎呀，图片丢失了"><span>同济大学社交圈</span></a>
+            <div class="vertical-line"></div>
+            <!--下面这个是缩放后的列表按钮-->
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon text-primary"></span>
+            </button>
+            <div class="collapse navbar-collapse zhb-bar" id="navbarResponsive">
+                <ul class="navbar-nav ul-1">
+                    <li class="nav-item nav-option" data-toggle="tooltip" data-placement="right">
+                        <a class="nav-link" href="javascript:void(0)">
+                            <span class="nav-link-text">首页</span>
+                        </a>
+                    </li>
+                    <li class="nav-item nav-option" data-toggle="tooltip" data-placement="right">
+                        <a class="nav-link" href="javascript:void(0)">
+                            <span class="nav-link-text">公告</span>
+                        </a>
+                    </li>
+                    <li class="nav-item nav-option" data-toggle="tooltip" data-placement="right">
+                        <a class="nav-link" href="javascript:void(0)">
+                            <span class="nav-link-text">文章</span>
+                        </a>
+                    </li>
+                    <li class="nav-item nav-option" data-toggle="tooltip" data-placement="right">
+                        <a class="nav-link" href="javascript:void(0)">
+                            <span class="nav-link-text">活动</span>
+                        </a>
+                    </li>
+                    <li class="nav-item nav-option" data-toggle="tooltip" data-placement="right">
+                        <a class="nav-link" href="javascript:void(0)">
+                            <span class="nav-link-text">用户</span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- <form class="form-inline ml-auto">
+                    <input class="form-control" type="text" placeholder="Search" style="margin:0 4px 0 0;">
+                    <button class="btn btn-success" type="button">Search</button>
+                </form> -->
+                <ul class="navbar-nav ml-auto zhb-ul">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle mr-lg-2" id="alertsDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-fw fa-comment"></i>
+                        <span class="d-lg-none">通知</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="alertsDropdown">
+                        <h6 class="dropdown-header">通知消息</h6>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">
+                            <span class="text-success">
+                            <strong>关于嘉定校区食堂调整</strong>
+                            </span>
+                            <span class="small float-right text-muted">2019-5-1</span>
+                            <div class="dropdown-message small">夏季即将到来，嘉定校区秋谷苑二楼小炒区增加小龙虾菜品，35元一份，欢迎大家品尝。</div>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">
+                            <span class="text-success">
+                            <strong>五一期间同济大学图书馆暂停开放</strong>
+                            </span>
+                            <span class="small float-right text-muted">2019-4-25</span>
+                            <div class="dropdown-message small">五一劳动节即将到来，届时图书馆工作人员将会全体休假，因此图书馆暂停开放。</div>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">
+                            <span class="text-success">
+                            <strong>宿舍购电须知</strong>
+                            </span>
+                            <span class="small float-right text-muted">2019-3-11</span>
+                            <div class="dropdown-message small">宿舍购电建议使用一卡通3.0统一购电，不建议使用旧的银行卡购电方式。</div>
+                        </a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle mr-lg-2 no-after" id="alertsDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img id="nav-head" src="images/head.jpg" alt="头像" />
+                            <span class="d-lg-none">您的信息</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right my-modal" aria-labelledby="alertsDropdown">
+                            <div class="user-info">
+                            <div class="first-line">
+                                <img class="nav-dropdown-head" src="images/head.jpg" alt="大头像" />
+                                <div class="img-right">
+                                <div>bingo</div>
+                                <div><span>416778940@qq.com</span></div>
+                                <div>计算机科学与技术</div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="second-line">
+                                <div class="line">
+                                <i class="fa fa-fw fa-user"></i>
+                                <span>臧海彬</span>
+                                </div>
+                                <div class="line">
+                                <i class="fa fa-fw fa-graduation-cap"></i>
+                                <span>计算机科学与技术</span>
+                                </div>
+                                <div class="line">
+                                <i class="fa fa-fw fa-id-card"></i>
+                                <span>1652241</span>
+                                <span class="line-button">编辑</span>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">
+                            <span class="text-success">
+                                <strong>我的足迹</strong>
+                            </span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                            <span class="text-success">
+                                <strong>我发布的文章</strong>
+                            </span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                            <span class="text-success">
+                                <strong>我参与的活动</strong>
+                            </span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                            <span class="text-success">
+                                <strong>收藏</strong>
+                            </span>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">
+                            <span class="text-success">
+                                <strong>使用帮助</strong>
+                            </span>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">
+                            <span class="text-success">
+                                <strong>登出</strong>
+                            </span>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!--我自己写的nav配合nav1.css即可-->
+        <!-- <div class="zhb-nav">
+            <a href="home.html" class="logo">
+                <img src="images/web.png" alt="哎呀，图片丢失了">
+            </a>
+            <ul class="nav-ul">
+                <li><a href="home.html">首页</a></li> 
+                <li><a href="my-article.html" id="my-share">我的帖子</a></li>
+                <li><a id="slode-down-myself" href="javascript:void(0)">页主推荐</a></li>
+                <li><a href="region-article.html " id="search-share">查找分享</a></li>
+                <li><a href="data-analyze.html" id="data-analyze">数据分析</a></li>
+                <li class="nav-item dropdown li-last">
+                    <a class="nav-link dropdown-toggle mr-lg-2 no-after" id="alertsDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img id="nav-head" src="images/head.jpg" alt="头像" />
+                        <span class="d-lg-none">您的信息</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right my-modal" aria-labelledby="alertsDropdown">
+                        <div class="user-info">
+                            <div class="first-line">
+                                <img class="nav-dropdown-head" src="images/head.jpg" alt="大头像" />
+                                <div class="img-right">
+                                <div>臧海彬</div>
+                                <div><span>1652241</span></div>
+                                <div>计算机科学与技术</div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="second-line">
+                                <div class="line">
+                                    <i class="fa fa-fw fa-map-marker"></i>
+                                    <span>嘉定校区7号楼301寝室</span>
+                                </div>
+                                <div class="line">
+                                    <i class="fa fa-fw fa-graduation-cap"></i>
+                                    <span>本科大学三年级</span>
+                                </div>
+                                <div class="line">
+                                    <i class="fa fa-fw fa-envelope"></i>
+                                    <span>416778940@qq.com</span>
+                                    <span class="line-button">编辑</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">
+                            <span class="text-success">
+                                <strong>使用帮助</strong>
+                            </span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">
+                            <span class="text-success">
+                                <strong>关于我们</strong>
+                            </span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">
+                            <span class="text-success">
+                                <strong>登出</strong>
+                            </span>
+                        </a>
+                    </div>
+                </li>
+                <li class="li-last">
+                    <form class="nav-form">
+                        <input class="form-control" type="text" placeholder="Search" style="margin:0 4px 0 0;">
+                        <button class="btn btn-success" type="button">Search</button>
+                    </form>
+                </li>
+                <div class="clear"></div>
+            </ul>
+        </div> -->
+    </body>
+</html>
+
+
+
+
+
+        <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top my-style" id="nav-bar">
+            <a class="navbar-brand" href="javascript:void(0)"><img src="images/web.png" alt="logo"><span>同济大学社交圈</span></a>
+            <div class="vertical-line"></div>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon text-primary"></span>
+            </button>
+            <div class="collapse navbar-collapse zhb-bar" id="navbarResponsive">
+                <ul class="navbar-nav ul-1">
+                    <li class="nav-item nav-option" data-toggle="tooltip" data-placement="right">
+                        <a class="nav-link" href="javascript:void(0)">
+                            <span class="nav-link-text">首页</span>
+                        </a>
+                    </li>
+                    <li class="nav-item nav-option" data-toggle="tooltip" data-placement="right">
+                        <a class="nav-link" href="javascript:void(0)">
+                            <span class="nav-link-text">公告</span>
+                        </a>
+                    </li>
+                    <li class="nav-item nav-option" data-toggle="tooltip" data-placement="right">
+                        <a class="nav-link" href="javascript:void(0)">
+                            <span class="nav-link-text">文章</span>
+                        </a>
+                    </li>
+                    <li class="nav-item nav-option" data-toggle="tooltip" data-placement="right">
+                        <a class="nav-link" href="javascript:void(0)">
+                            <span class="nav-link-text">活动</span>
+                        </a>
+                    </li>
+                    <li class="nav-item nav-option" data-toggle="tooltip" data-placement="right">
+                        <a class="nav-link" href="javascript:void(0)">
+                            <span class="nav-link-text">用户</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto zhb-ul">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle mr-lg-2" id="alertsDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-fw fa-comment"></i>
+                        <span class="d-lg-none">通知</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="alertsDropdown">
+                        <h6 class="dropdown-header">通知消息</h6>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">
+                            <span class="text-success">
+                            <strong>关于嘉定校区食堂调整</strong>
+                            </span>
+                            <span class="small float-right text-muted">2019-5-1</span>
+                            <div class="dropdown-message small">夏季即将到来，嘉定校区秋谷苑二楼小炒区增加小龙虾菜品，35元一份，欢迎大家品尝。</div>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">
+                            <span class="text-success">
+                            <strong>五一期间同济大学图书馆暂停开放</strong>
+                            </span>
+                            <span class="small float-right text-muted">2019-4-25</span>
+                            <div class="dropdown-message small">五一劳动节即将到来，届时图书馆工作人员将会全体休假，因此图书馆暂停开放。</div>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">
+                            <span class="text-success">
+                            <strong>宿舍购电须知</strong>
+                            </span>
+                            <span class="small float-right text-muted">2019-3-11</span>
+                            <div class="dropdown-message small">宿舍购电建议使用一卡通3.0统一购电，不建议使用旧的银行卡购电方式。</div>
+                        </a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle mr-lg-2 no-after" id="alertsDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img id="nav-head" src="images/head.jpg" alt="头像" />
+                            <span class="d-lg-none">您的信息</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right my-modal" aria-labelledby="alertsDropdown">
+                            <div class="user-info">
+                            <div class="first-line">
+                                <img class="nav-dropdown-head" src="images/head.jpg" alt="大头像" />
+                                <div class="img-right">
+                                <div>bingo</div>
+                                <div><span>416778940@qq.com</span></div>
+                                <div>计算机科学与技术</div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="second-line">
+                                <div class="line">
+                                <i class="fa fa-fw fa-user"></i>
+                                <span>臧海彬</span>
+                                </div>
+                                <div class="line">
+                                <i class="fa fa-fw fa-graduation-cap"></i>
+                                <span>计算机科学与技术</span>
+                                </div>
+                                <div class="line">
+                                <i class="fa fa-fw fa-id-card"></i>
+                                <span>1652241</span>
+                                <span class="line-button">编辑</span>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">
+                            <span class="text-success">
+                                <strong>我的足迹</strong>
+                            </span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                            <span class="text-success">
+                                <strong>我发布的文章</strong>
+                            </span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                            <span class="text-success">
+                                <strong>我参与的活动</strong>
+                            </span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                            <span class="text-success">
+                                <strong>收藏</strong>
+                            </span>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">
+                            <span class="text-success">
+                                <strong>使用帮助</strong>
+                            </span>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">
+                            <span class="text-success">
+                                <strong>登出</strong>
+                            </span>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav> -->
+        //上面是我自己写的nav配合nav2.css还可以看
