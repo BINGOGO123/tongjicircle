@@ -2,6 +2,8 @@
 
 一个论坛类社交网站
 
+入口：<https://bingoz.cn/tongjicircle>
+
 ## 基本功能
 
 1. 用户注册、登录以及各项个人信息的录入维护。
@@ -30,7 +32,9 @@
 
 ### ER图
 
-![ER图]()
+[ER图](https://github.com/BINGOGO123/tongjicircle/blob/master/picture/ER%E5%9B%BE.vsdx)
+
+![ER图](https://github.com/BINGOGO123/tongjicircle/blob/master/picture/ER.png)
 
 ### 逻辑结构合理性
 
